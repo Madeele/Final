@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products | Gusti Leather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Have you ever tried to start practicing yoga? Here you will get some knowledge about all advantages and increasing your life standarts">
+    <meta name=”keywords” content=”leather, products, bags”>
+    <link rel="stylesheet" href="../mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="../IMAGES/885660_886391038119851_7839843226156363929_o.png" class="logo" alt="logo">
+            <a href="products.html">Products</a>
+            <a href="about.html">About Gusti Leather</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.gusti-leather.co.uk/">Shop</a>
+        </div>
+    </nav>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <main>
+        <div class="upper_logo">
+            <img src="../IMAGES/czarne.png" class="logo" alt="logo">
+        </div>
+        <div class="content">
+            <h1 class="pagetitle">Gusti Leather creates fully handmade leather products of the best quality. </h1>
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('bags')"> Bags</button>
+                <button class="btn" onclick="filterSelection('luggage')"> Luggage</button>
+                <button class="btn" onclick="filterSelection('bike')"> Bike Accessories</button>
+                <button class="btn" onclick="filterSelection('stationery')"> Stationery</button>
+            </div>
+
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="container">
+                <div class="filterDiv bags one">Max</div>
+                <div class="filterDiv bags two">Cecilia</div>
+                <div class="filterDiv luggage six">Harvey</div>
+                <div class="filterDiv bags three">Maola</div>
+                <div class="filterDiv stationery fourth">Cow</div>
+                <div class="filterDiv bags four">Finlay</div>
+                <div class="filterDiv luggage five">Mustang</div>
+                <div class="filterDiv luggage seven">Cat</div>
+                <div class="filterDiv luggage eight">Dog</div>
+                <div class="filterDiv bike nine">Melon</div>
+                <div class="filterDiv bike ten">Kiwi</div>
+                <div class="filterDiv bike eleven">Banana</div>
+                <div class="filterDiv bike twelve">Lemon</div>
+                <div class="filterDiv stationery third">Cow</div>
+                <div class="filterDiv stationery fifth">Cow</div>
+                <div class="filterDiv stationery sixth">Cow</div>
+            </div>
+        </div>
+    </main>
+    <footer class=”footer”>
+        <div class="contact">
+            <img src="../IMAGES/885660_886391038119851_7839843226156363929_o.png" class="logo_footer" alt="logo_footer">
+            <p class="email">E-Mail: info@gusti-leder.de</p>
+        </div>
+
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+
+</body></html>

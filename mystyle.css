@@ -22,7 +22,7 @@
 }
 
 .sidenav a {
-    padding: 8px 8px 40px 32px;
+    padding: 8px 8px 40px 8px;
     text-decoration: none;
     font-size: 30px;
     color: #818181;
@@ -115,12 +115,116 @@
     padding: 15px;
     font-size: 20px;
 }
+
 .pagetitleleft {
-        text-align: center;
+    text-align: center;
     padding: 15px;
     font-size: 25px;
-    }
+}
 
+.container {
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.filterDiv {
+    float: left;
+    background-color: gray;
+    color: black;
+    width: 50%;
+    line-height: 100px;
+    text-align: center;
+    display: none;
+    height: 250px;
+    margin-bottom: -50px;
+    font-size: 30px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 4% 3%;
+    width: 100%;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.pagetitlecontact {
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+}
+
+#myBtnContainer {
+    width: 50%;
+    margin: 0 auto 20px auto;
+
+}
+
+/***************Elements container backgrounds**********/
+.one {
+    background-image: url(IMAGES/U4-haupt_600x600.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.two {
+    background-image: url(IMAGES/2M43-26-23_haupt-handtasche-leder_600x600.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.three {
+    background-image: url(IMAGES/2M69-48-5-haupt_600x600.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.four {
+    background-image: url(IMAGES/U18n-1-haupt59a6bc9396ea8.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.six {
+    background-image: url(IMAGES/R27b-Hauptbild5a7ad98e12451_600x600.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
 
 @media screen and (min-width: 600px) {
     .sidenav {
@@ -174,4 +278,31 @@
         padding-left: 6%;
         padding-right: 6%;
     }
+
+    .two {
+        background-size: 50%;
+    }
+
+    .one {
+        background-size: 50%;
+    }
+    .three {
+        background-size: 50%;
+    }
+
+    .four {
+        background-size: 50%;
+    }
+
+    .six {
+        background-size: 50%;
+    }
+.container {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+    .filterDiv {
+    height: 500px;
+}
 }
