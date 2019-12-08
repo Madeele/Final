@@ -175,8 +175,8 @@
 }
 
 #myBtnContainer {
-    width: 50%;
-    margin: 0 auto 20px auto;
+    width: 85%;
+    margin: 30px auto 20px auto;
 
 }
 
@@ -225,7 +225,94 @@
     background-repeat: no-repeat;
     background-color: white;
 }
-
+.five {
+    background-image: url(IMAGES/luggage2.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.seven {
+    background-image: url(IMAGES/luggage3.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.eight {
+    background-image: url(IMAGES/luggage4.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.nine {
+    background-image: url(IMAGES/bike1.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.ten {
+    background-image: url(IMAGES/bike2.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.eleven {
+    background-image: url(IMAGES/bike3.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.twelve {
+    background-image: url(IMAGES/bike4.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.third {
+    background-image: url(IMAGES/stationery4.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.fifth {
+    background-image: url(IMAGES/stationery3.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.sixth {
+    background-image: url(IMAGES/stationery2.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.fourth {
+    background-image: url(IMAGES/stationery1.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
 @media screen and (min-width: 600px) {
     .sidenav {
         padding-top: 70px;
@@ -261,10 +348,9 @@
     }
 
     .pagetitleleft {
-        text-align: left;
-        padding: 40px 0 0 100px;
+        text-align: center;
         font-size: 30px;
-        width: 50%;
+        width: 100%;
     }
 
     .descriptempty {
@@ -279,23 +365,11 @@
         padding-right: 6%;
     }
 
-    .two {
+    .two, .seven, .eight, .five, .one, .three, .four, .six, .nine, .ten, .eleven, .twelve, .third, .fifth, .sixth {
         background-size: 50%;
     }
-
-    .one {
-        background-size: 50%;
-    }
-    .three {
-        background-size: 50%;
-    }
-
-    .four {
-        background-size: 50%;
-    }
-
-    .six {
-        background-size: 50%;
+    .fourth {
+        background-size: 35%
     }
 .container {
     overflow: hidden;
@@ -305,4 +379,13 @@
     .filterDiv {
     height: 500px;
 }
+    #myBtnContainer {
+    width: 92%;
+    margin: 0 auto 20px auto;
+}
+    .btn {
+    width: 19.5%;
+
+}
+
 }
