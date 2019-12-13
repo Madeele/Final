@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="mystyle.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <meta name="robots" content="noindex" />
 </head>
 
 <body>
     <nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <img src="IMAGES/885660_886391038119851_7839843226156363929_o.png" class="logo" alt="logo">
+             <a href="index.html"><img src="IMAGES/885660_886391038119851_7839843226156363929_o.png" class="logo" alt="logo"></a>
             <a href="SUBPAGES/products.html">Products</a>
             <a href="SUBPAGES/about.html">About Gusti Leather</a>
             <a href="SUBPAGES/contact.html">Contact</a>
@@ -40,12 +39,66 @@
             <img src="IMAGES/2A147-33-1_haupt-schlusseltasche-leder2.jpg" class="bagright" alt="Bag">
             <h1 class="pagetitleleft">Gusti Leather studio products focus on practicality. </h1>
             <p class="descriptempty"> These products are produced in certified factories and are tanned using chromium salt. This ensures that the leather we use is robust and our products can be used for years to come. </p>
-            <h1 class="pagetitle">Gusti Leder nature products are hand-made by family-run businesses and are tanned and dyed using 100% natural material. The production is completely ecological and sustainable. </h1>
-            <img src="IMAGES/il_794xN.1644156062_53aq2-01.jpg" class="bagtwo" alt="Bag">
+            <img src="IMAGES/bagmain-01-01.png" class="bagtwo" alt="Bag">
 
-            <p class="descript"> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-            <p class="descript"> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <p class="icon_text"> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
         </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="hands" src="IMAGES/366-3666084_hands-protect-world-comments-hands-world-icon.png">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img id="plant" src="IMAGES/environment-icon-png-1.jpg">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </main>
     <footer class=”footer”>
         <div class="contact">
