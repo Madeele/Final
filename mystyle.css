@@ -50,14 +50,12 @@
 }
 
 /*********************************Footer***********************/
-.”footer” {
+.footer {
     height: 120px;
     width: 100%;
     background-color: #111;
-    position: fi;
-    left: 0;
-    bottom: 0;
-    margin-top: 50px;
+    position: static;
+    margin-top: 30px;
 }
 
 .logo_footer {
@@ -90,7 +88,8 @@
     text-align: center;
     padding: 15px;
     font-size: 20px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .bagtwo {
@@ -457,6 +456,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block;
+margin-top: 50px;
 
 }
 
@@ -466,6 +466,7 @@ img {
     margin-right: auto;
     display: block;
     height: 173px;
+    margin-top: 50px;
 }
 
 
@@ -501,7 +502,7 @@ img {
     }
 
     .bagtwo {
-        width: 60%;
+        width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
     }
