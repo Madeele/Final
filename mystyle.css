@@ -69,6 +69,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .email {
@@ -109,6 +110,7 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 25px;
+    margin-top: 20px;
 }
 
 .bagright {
@@ -182,6 +184,7 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 40px;
+    margin-top: 30px;
 }
 
 #myBtnContainer {
@@ -528,6 +531,7 @@ img {
     .pagetitle {
         padding-left: 6%;
         padding-right: 6%;
+        margin-top: 50px;
     }
 
     .two,
@@ -609,9 +613,9 @@ img {
 }
 
 #goat {
-    width: 30%;
-    margin-left: 40px;
-    margin-top: -80px;
+    width: 50%;
+   margin: auto;
+    display: block;
 }
 
 .descripts {
