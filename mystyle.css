@@ -479,6 +479,35 @@ img {
     margin-right: auto;
     display: block;
 }
+.description {
+    padding: 15px;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#goat {
+    width: 50%;
+   margin: auto;
+    display: block;
+}
+
+.descripts {
+
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.icon_text {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+}
+
 
 
 /*************Media changing to desktop version*******/
@@ -603,33 +632,10 @@ img {
     .icon_text {
         width: 70%;
     }
-}
-
-.description {
-    padding: 15px;
-    font-size: 20px;
-    width: 80%;
-    margin: auto;
-}
-
 #goat {
-    width: 50%;
+    width: 20%;
    margin: auto;
     display: block;
 }
-
-.descripts {
-
-    text-align: center;
-    padding: 15px;
-    font-size: 20px;
-    width: 100%;
 }
 
-.icon_text {
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    width: 90%;
-    margin: auto;
-}
